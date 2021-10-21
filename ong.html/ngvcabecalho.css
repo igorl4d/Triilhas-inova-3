@@ -1,0 +1,50 @@
+.tela_de_fundo{
+	position: absolute;
+	width: 1401px;
+	height: 121px;
+	left: 0px;
+	top: 0px;
+	background: #000000;
+	
+}
+
+.logo{
+	position: absolute;
+	width: 228px;
+	height: 98px;
+	left: 56px;
+	top: 22px;
+}
+
+.menu{
+	 position: absolute;
+	 width: 855px; 
+	 height: 39px; 
+	 left: 473px; 
+	 top: 53px;
+	 
+}
+
+.menu_barra{
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+
+}
+
+.menu_item{
+
+	font-family: Manrope;
+	 font-style: normal; 
+	 font-weight: 800;
+	 font-size: 18px; 
+	 line-height: 200%;
+	 letter-spacing: 0.1em;
+}
+
+.menu_link{
+	
+	color: #FFFFFF;
+	text-decoration: none;
+
+}

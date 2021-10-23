@@ -7,38 +7,45 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./css/responsivo.css">
+    <link rel ="stylesheet" href="./css/ngvcabecalho.css">
+     <link rel ="stylesheet" href="./css/banner.css">
+    
     <title>SLZ Invisivel</title>
     <!-- Inserir no css função para impedir a formatação do navegador em nosso site -->
 </head>
 
 <body>
 
-    <header>
+    <header class="tela_de_fundo">
         <!-- lista de navegação no cabeçalho -->
-        <nav>
-            <ul>
-                <li><a>Página Inicial</a></li>
-                <li><a>Nossa História</a></li>
-                <li><a>Quem Somos</a></li>
-                <li><a>Como Ajudar</a></li>
-                <li><a>Contato</a></li>
+        <img  class="logo" src="logocabecalho.png" alt="São Luís Invisivel">
+        <nav class="menu">
+            <ul class="menu_barra">
+                <li class="menu_item"><a class="menu_link"href="#">Página Inicial</a></li>
+                <li class="menu_item"><a class="menu_link" href="#">Nossa História</a></li>
+                <li class="menu_item"><a class="menu_link" href="#">Quem Somos</a></li>
+                <li class="menu_item"><a class="menu_link" href="#">Como Ajudar</a></li>
+                <li class="menu_item"><a class="menu_link" href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <div>
+    <div  class="banner">
         <!-- Texto de Inicio da primeira pagina -->
-        <h1>SLZ Invisivel</h1>
+        
 
         <!-- imagem de background para carrossel -->
 
-        <div><img src="DSC02111 1.jpg"></div>
-        <p>Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <div><img class="banner_imagem" src="banner.jpg"></div>
+        <h1 class="banner_titulo">SLZinvisível</h1>
+        
+       
+        <p class="banner_paragrafo">Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Praesent dictum, ex ut efficitur laoreet, dui ipsum iaculis
             purus, sit amet. </p>
 
         <!--botão 'Nossa Historia'  -->
-        <a href="#historia">Venha Nos Conhecer</a>
+        <p><a class="botao" href="#historia">Venha Nos Conhecer</a></p>
 
     </div>
     <!-- coloquei classe nessa divisão para o botão 

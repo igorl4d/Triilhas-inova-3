@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,12 +20,18 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3em;
+}
+
+.container-header {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  width: 190px;
-  margin: -2em 0;
+  width: 170px;
   z-index: -1;
 }
 
@@ -47,6 +54,13 @@ img {
 
 .menu_item:hover {
   border-bottom: 2px solid white;
+}
+.selected {
+  border-bottom: 2px solid white;
+}
+
+.menu-hamburguer {
+  display: none;
 }
 
 .menu_link {
@@ -298,6 +312,14 @@ textarea {
   display: flex;
   flex-direction: column;
 }
+
+footer {
+  display: flex;
+  padding: 3em;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 1px white;
+}
 @media only screen and (min-device-width: 0px) {
   .historia {
     display: grid;
@@ -424,8 +446,21 @@ textarea {
 
 @media only screen and (max-width: 700px) {
   .menu {
-    display: none;
+    position: absolute;
+    right: 100000px;
+    transition: 1s;
   }
+
+  .menu.show {
+    right: 0;
+  }
+  .menu-hamburguer {
+    display: block;
+    width: 50px;
+    margin-right: 2em;
+    cursor: pointer;
+  }
+
   .texto-quem-somos {
     width: 100%;
   }

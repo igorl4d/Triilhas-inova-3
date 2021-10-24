@@ -18,19 +18,22 @@
 
     <header class="header">
         <!-- lista de navegação no cabeçalho -->
+        <div class = 'container-header'>
         <img  class="logo" src="assets/logo-fundopreto.png " alt="São Luís Invisivel">
         <nav class="menu">
-            <ul class="menu_barra">
-                <li class="menu_item"><a class="menu_link"href="#">Página Inicial</a></li>
-                <li class="menu_item"><a class="menu_link" href="#">Nossa História</a></li>
-                <li class="menu_item"><a class="menu_link" href="#">Quem Somos</a></li>
-                <li class="menu_item"><a class="menu_link" href="#">Como Ajudar</a></li>
-                <li class="menu_item"><a class="menu_link" href="#">Contato</a></li>
-            </ul>
-        </nav>
+                <ul class="menu_barra">
+                    <li class="menu_item selected"><a class="menu_link"href="#">Página Inicial</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#historia">Nossa História</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#quem-somos">Quem Somos</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#ajudar">Como Ajudar</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <img class = 'menu-hamburguer' src = 'assets/hamburguer-menu.svg' alt = 'Menu Mobile'>
+        </div>
     </header>
 
-    <div  class="banner">
+    <div  class="banner" id = 'pagina-inicial'>
         <!-- Texto de Inicio da primeira pagina -->
     
         <!-- imagem de background para carrossel -->
@@ -47,7 +50,7 @@
     <!-- coloquei classe nessa divisão para o botão 
     de "nossa historia" fosse direto para essa sessão -->
 
-    <div class="historia">
+    <div class="historia" id = 'historia'>
             <!-- sessão Nossa História -->
             
          
@@ -62,7 +65,7 @@
            <div class="icone">
             <div>
                 <h2>Mais de 100</h2>
-                <p>Lorem Ipsolum.</p>
+                <p>Pessoas Ajudadas.</p>
             </div>
 
             <div>
@@ -90,7 +93,7 @@
     <div class="historia_imagem__divisao"> <img  src = "assets/img-trans.png" style = 'border-radius: 0;'> </div>
 
 
-    <div class = 'quem-somos'>
+    <div class = 'quem-somos' id = 'quem-somos'>
         
         
         <div class = 'container-quem-somos'>
@@ -126,7 +129,7 @@
 
     <!-- Sessão NOSSOS PROJETOS -->
 
-    <div class = 'container-projetos'>
+    <div class = 'container-projetos' id = 'projetos'>
         <div class = 'texto-projetos'>
             <h2>Nossos Projetos</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -145,7 +148,7 @@
         </div>
     </div>
 
-    <div class = 'como-ajudar'>
+    <div class = 'como-ajudar' id = 'ajudar'>
         <div class = 'container-ajudar'>  
             <div class = 'texto-ajudar'>
                 <h2>Como Ajudar</h2>
@@ -180,7 +183,7 @@
             </div>
             </div>  
     </div>  
-    <div class="container-contato">
+    <div class="container-contato" id = 'contato'>
         <div class = 'item-flex-contato-1'>
             <div class = 'texto-contato'>
                 <h2>Contato</h2>
@@ -222,11 +225,10 @@
 
     <footer>
         <!-- credito aos desenvolvedores do site abaixo do formulário e endereços -->
-        <div>
             <div>
                 <span>Desenvolvidor por Igor, Johnny, Lilia, Mateus e Karla</span>
             </div>
-        </div>
+        <script src = 'script.js'></script>
     </footer>
 
 </body>

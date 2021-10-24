@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/responsivo.css">
-    <link rel ="stylesheet" href="./css/ngvcabecalho.css">
-     <link rel ="stylesheet" href="./css/banner.css">
-    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <title>SLZ Invisivel</title>
     <!-- Inserir no css função para impedir a formatação do navegador em nosso site -->
 </head>
 
 <body>
 
-    <header class="tela_de_fundo">
+    <header class="header">
         <!-- lista de navegação no cabeçalho -->
-        <img  class="logo" src="logocabecalho.png" alt="São Luís Invisivel">
+        <img  class="logo" src="assets/logo-fundopreto.png " alt="São Luís Invisivel">
         <nav class="menu">
             <ul class="menu_barra">
                 <li class="menu_item"><a class="menu_link"href="#">Página Inicial</a></li>
@@ -32,21 +32,17 @@
 
     <div  class="banner">
         <!-- Texto de Inicio da primeira pagina -->
-        
-
+    
         <!-- imagem de background para carrossel -->
-
-        <div><img class="banner_imagem" src="banner.jpg"></div>
+        <div class = 'banner_texto'>
         <h1 class="banner_titulo">SLZinvisível</h1>
         
        
-        <p class="banner_paragrafo">Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Praesent dictum, ex ut efficitur laoreet, dui ipsum iaculis
-            purus, sit amet. </p>
+        <p class="banner_paragrafo">A SLZinvisível é uma ong com intuito de ajudar pessoas carentes,a cada ação realizada é deixado muito amor,empatia e solidariedade! Essa é a nossa marca, fazer as pessoas felizes.</p>
 
         <!--botão 'Nossa Historia'  -->
         <p><a class="botao" href="#historia">Venha Nos Conhecer</a></p>
-
+        </div>
     </div>
     <!-- coloquei classe nessa divisão para o botão 
     de "nossa historia" fosse direto para essa sessão -->
@@ -56,18 +52,11 @@
             
          
                 <h2 class="historia_titulo">Nossa História</h2>
-                <p class="historia_texto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis dignissim ligula sit amet scelerisque dignissim. In hac habitasse platea dictumst.
-                Integer sit amet fringilla mauris. Vestibulum ac purus eget quam tempor venenatis.
-                Vivamus orci est, efficitur quis mauris id, tincidunt pulvinar lectus.<br><br>
-                Integer lacinia risus ut neque cursus, sed eleifend magna laoreet.
-                Curabitur efficitur, massa in tempus malesuada, justo turpis lobortis
-                ligula, sed fermentum purus purus vel dolor. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Etiam varius vestibulum aliquam.</p>
+                <p class="historia_texto">O nosso principal propósito é concientizar as pessoas através de histórias de pessoas em  situação de vulnerabilidade. Cada voluntário,cada alimento doado,cada arrecadação é diretamente voltada para as essas fazer o BEM a estás pessoas, queremos sentir a alegria no seu olhar e sorriso. Com isso, acrediditamos que a cada ação que realizamos e as que irão ser realizadas precisam de muito humanismo e solidariedade para serem feitas totalmente com sucesso,e sempre estamos abertos as voluntários que são carregados disso!</p>
         
 
             <!--para imagem ao lado do texto  -->
-            <div class="historia_imagem"><img src="IMG_4385 1.jpg"></div>
+            <div class="historia_imagem"><img src="assets/imagem-historia-1.png"></div>
 
         <!-- 4 colunas 'mais de 100' -->
            <div class="icone">
@@ -93,51 +82,61 @@
            </div>
 
            <!-- imagem ao lado das 4 colunas -->
-            <div class="historia_imagem1"><img src="20210723161621_IMG_3702 1.jpg"></div>
+            <div class="historia_imagem1"><img src="assets/imagem-hisotira-2.jpg"></div>
 
             
     </div>
     <!-- imagem de divisão de páginas -->
-    <div class="historia_imagem__divisao"> <img  src = "_MG_5329 1.png" > </div>
+    <div class="historia_imagem__divisao"> <img  src = "assets/img-trans.png" style = 'border-radius: 0;'> </div>
 
 
-    <div>
-        <h2>Quem somos</h2>
-        <p>Uma equipe formada por pessoas apaixonadas por animais e que amam ajudar!
-            Vai ser um prazer conhecer vocês, sejam benvindos!</p>
+    <div class = 'quem-somos'>
+        
+        
+        <div class = 'container-quem-somos'>
+            <div class = 'texto-quem-somos'>
+        
+                <h2>Quem somos</h2>
+            
+                <p>Somos pessoas que amam ajudar outras pessoas, fazendo com que possam sentir-se bem,acolhidos e amados. É um prazer te conhecer!</p>
+            
+            </div>
 
-        <div>
-            <img src="DSC02142 1.png">
-            <h2>Katerine</h2>
-            <p>Diretora executiva e mãe de pet apaixonada!</p>
-        </div>
+            <div class = 'flex-quem-somos'>
+                <div class = 'item-quem-somos'>
+                    <img src="assets/DSC02142 1.png">
+                    <h2>Katerine</h2>
+                    <p>Diretora executiva e responsavél pelo instagram do São Luís Invisivel</p>
+                </div>
 
-        <div>
-            <img src="DSC02117 1.png">
-            <h2>Lucas</h2>
-            <p>Diretora executiva e mãe de pet apaixonada!</p>
-        </div>
+                <div class = 'item-quem-somos'>
+                    <img src="assets/DSC02117 1.png">
+                    <h2>Lucas</h2>
+                    <p>Sócio Fundador e Fotógrofo Responsável pelas fotos tiradas nas ações</p>
+                </div>
 
-        <div>
-            <img src="DSC02084 1.png">
-            <h2>Arthur</h2>
-            <p>Diretora executiva e mãe de pet apaixonada!</p>
+                <div class = 'item-quem-somos'>
+                    <img src="assets/DSC02084 1.png">
+                    <h2>Arthur</h2>
+                    <p>Coordenador Geral e Responsável pela organização de ações</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Sessão NOSSOS PROJETOS -->
 
-    <div>
-        <div>
+    <div class = 'container-projetos'>
+        <div class = 'texto-projetos'>
             <h2>Nossos Projetos</h2>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
         </div>
         <!-- imagem que provavelmente será uma galeria de img's responsive -->
-        <div><img src="IMG_4408 1.png"></div>
         <!-- texto abaixo da imagem -->
-        <div>
-            <h2>Projeto Lorem Ipsolum</h2>
+        <div class = 'card-projeto'>
+            <img src="assets/IMG_4408 1.png">
+            <h3>Projeto Lorem Ipsolum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -146,82 +145,82 @@
         </div>
     </div>
 
-    <div>
+    <div class = 'como-ajudar'>
+        <div class = 'container-ajudar'>  
+            <div class = 'texto-ajudar'>
+                <h2>Como Ajudar</h2>
+                <p>Se interessou por nossa causa e quer nos ajudar? Fantastico! Sua ajuda vai ser muito importante
+                    pra gente! Lorem ipsolum dolor, rede ada coley, sdsadsdaad dsddsadas</p>
+            </div>
+            <!-- 3 blocos com informações 'saiba mais' -->
+            <div class = 'flex-ajudar'>
+                <div class = 'card-ajudar'>
+                    <div class ='moldura-icone-ajudar'><img></div>
+                    <h3>Nos ajude</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim ligula sit amet scelerisque.</p>
+                    <!--botão 'Saiba Mais'  -->
+                    <a href="#">Saiba Mais</a>
+                </div>
 
-        <h2>Como Ajudar</h2>
-        <p>Se interessou por nossa causa e quer nos ajudar? Fantastico! Sua ajuda vai ser muito importante
-            pra gente! Lorem ipsolum dolor, rede ada coley, sdsadsdaad dsddsadas</p>
+                <div class = 'card-ajudar'>
+                    <div class ='moldura-icone-ajudar'><img></div>
+                    <h3>Nos ajude</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim ligula sit amet scelerisque.</p>
+                    <!--botão 'Saiba Mais'  -->
+                    <a href="#">Saiba Mais</a>
+                </div>
+
+                <div class = 'card-ajudar'>
+                    <div class ='moldura-icone-ajudar'><img></div>
+                    <h3>Nos ajude</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim ligula sit amet scelerisque.</p>
+                    <!--botão 'Saiba Mais'  -->
+                    <a href="#">Saiba Mais</a>
+                </div>
+            </div>
+            </div>  
+    </div>  
+    <div class="container-contato">
+        <div class = 'item-flex-contato-1'>
+            <div class = 'texto-contato'>
+                <h2>Contato</h2>
+                <p>Se interessou por nossa causa e quer nos ajudar? Fantastico! Sua ajuda vai ser muito importante
+                    pra gente!
+                    Lorem ipsolum dolor, rede ada coley, sdsadsdaad dsddsadas</p>
+            </div>
+                <div>
+
+                    <!--Endereços-->
+                    <div>
+                        <ul>
+                            <li>Endereço</li>
+                            <li>Endereço</li>
+                            <li>Endereço</li>
+                            <li>Endereço</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- formulario ao lado dos contatos e endereços -->
+            <div>
+                <form action="#" class = 'flex-form'>
+
+            <!-- coloquei algumas clsses, mas vocês podem renomear da forma que preferirem -->
+
+                    <input type="email" id="email" class="input-padrao" required placeholder="Email">
+
+                    <textarea cols="50" rows="20" id="mensagem" class="input-padrao"
+                        placeholder=" escrever mensagem" required></textarea>
+
+                    <button type="submit" class ='butao-enviar'>Enviar</button>
+            </div>
+            </form>
+        </div>
     </div>
-    <!-- 3 blocos com informações 'saiba mais' -->
-
-    <div>
-        <div><img></div>
-        <h2>Nos ajude</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim ligula sit amet scelerisque.</p>
-        <!--botão 'Saiba Mais'  -->
-        <a href="#">Saiba Mais</a>
-    </div>
-
-    <div>
-        <div><img></div>
-        <h2>Nos ajude</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim ligula sit amet scelerisque.</p>
-        <!--botão 'Saiba Mais'  -->
-        <a href="#">Saiba Mais</a>
-    </div>
-
-    <div>
-        <div><img></div>
-        <h2>Nos ajude</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim ligula sit amet scelerisque.</p>
-        <!--botão 'Saiba Mais'  -->
-        <a href="#">Saiba Mais</a>
-    </div>
-
-
-
+</div>
     <!-- rodapé da página -->
 
     <footer>
-        <div>
-            <div>
-                <h2>Contato</h2>
-                <div>
-                    <p>Se interessou por nossa causa e quer nos ajudar? Fantastico! Sua ajuda vai ser muito importante
-                        pra gente!
-                        Lorem ipsolum dolor, rede ada coley, sdsadsdaad dsddsadas</p>
-
-                    <div>
-
-                        <!--Endereços-->
-                        <div>
-                            <ul>
-                                <li>Endereço</li>
-                                <li>Endereço</li>
-                                <li>Endereço</li>
-                                <li>Endereço</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- formulario ao lado dos contatos e endereços -->
-                <div>
-                    <form action="#">
-
-                <!-- coloquei algumas clsses, mas vocês podem renomear da forma que preferirem -->
-
-                        <input type="email" id="email" class="input-padrao" required placeholder="Email">
-
-                        <textarea cols="50" rows="20" id="mensagem" class="input-padrao"
-                            placeholder=" escrever mensagem" required></textarea>
-
-                        <button type="submit">Enviar</button>
-                </div>
-                </form>
-            </div>
-        </div>
-        </div>
         <!-- credito aos desenvolvedores do site abaixo do formulário e endereços -->
         <div>
             <div>

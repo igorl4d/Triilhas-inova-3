@@ -82,3 +82,26 @@ setaCarouselDireita.addEventListener('click', () => {
     console.log(cards[0].classList, cards[1].classList, cards[2].classList);
   }
 });
+
+const ponto = document.querySelectorAll('.ponto');
+
+ponto[0].addEventListener('click', () => {
+  banner.style.backgroundImage = "url('assets/banner-1.jpg')";
+  ponto[0].style.backgroundColor = 'white';
+  ponto[1].style.backgroundColor = 'rgb(128, 128, 128)';
+  ponto[2].style.backgroundColor = 'rgb(128, 128, 128)';
+});
+
+ponto[1].addEventListener('click', () => {
+  banner.style.backgroundImage = "url('assets/foto-banner-center.png')";
+  ponto[1].style.backgroundColor = 'white';
+  ponto[0].style.backgroundColor = 'rgb(128, 128, 128)';
+  ponto[2].style.backgroundColor = 'rgb(128, 128, 128)';
+});
+
+ponto[2].addEventListener('click', () => {
+  banner.style.backgroundImage = "url('assets/foto-banner-end-mobile.png')";
+  ponto[2].style.backgroundColor = 'white';
+  ponto[0].style.backgroundColor = 'rgb(128, 128, 128)';
+  ponto[1].style.backgroundColor = 'rgb(128, 128, 128)';
+});

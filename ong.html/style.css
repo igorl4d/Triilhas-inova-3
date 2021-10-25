@@ -147,6 +147,11 @@ img {
   width: 30px;
   cursor: pointer;
 }
+
+.seta-direita-carousel {
+  width: 30px;
+  cursor: pointer;
+}
 .barra-progresso {
   width: 33%;
   height: 100%;
@@ -180,6 +185,10 @@ img {
   flex-direction: column;
   justify-content: center;
   gap: 7em;
+}
+
+.container-ponto {
+  display: none;
 }
 
 .flex-quem-somos {
@@ -695,6 +704,9 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .banner {
+    padding: 0;
+  }
   .banner_texto {
     gap: 3em;
   }
@@ -702,6 +714,13 @@ footer {
     margin: 0;
   }
 
+  .seta-direita {
+    display: none;
+  }
+
+  .seta-esquerda {
+    display: none;
+  }
   input {
     width: 80%;
     margin: 1em auto;
@@ -728,5 +747,29 @@ footer {
     align-self: flex-end;
     position: relative;
     top: 350px;
+  }
+
+  .barra-slide {
+    display: none;
+  }
+
+  .container-ponto {
+    display: flex;
+    width: 33%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .ponto {
+    margin: 2em 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: rgb(128, 128, 128);
+    border-radius: 50%;
+  }
+
+  .selecionado {
+    background-color: white;
   }
 }
